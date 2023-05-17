@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Open + Sans:400,400italic,300italic,300');
+@import url('https://fonts.googleapis.com/css?family=Alkatra');
+.experience {
+  padding: 20px;
+  margin-top: -40px;
+  top: 40px;
+  position: relative;
+  min-width: 100vh;
+}
+
+.timeline-container {
+  --line-color: black;
+}
+
+.profile-card *,
+.profile-card *:before,
+.profile-card *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.profile-card {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  /* margin: 20px auto; */
+  /* width: 80%; */
+  height: 60%;
+  overflow: hidden;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  position: relative;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.profile-card header {
+  background: #0d1360;
+  padding: 1px;
+  height: 8px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  height: 200px;
+}
+
+.profile-card header img {
+  border: 2px solid #fff;
+  display: block;
+  margin: 10px auto;
+}
+
+.profile-card header h1 {
+  color: #fff;
+  font-family: "Open Sans";
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: 0;
+  text-align: center;
+  line-height: 1;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.profile-card header h2 {
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  margin: 0 0 5px;
+  text-align: center;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.profile-card .profile-bio {
+  padding: 10px;
+  position: relative;
+  opacity: 1;
+  -webkit-transition: all 0.3s 0.25s;
+  -moz-transition: all 0.3s 0.25s;
+  -o-transition: all 0.3s 0.25s;
+  transition: all 0.3s 0.25s;
+}
+
+.profile-card .profile-bio p {
+  color: black;
+  font-size: 14px;
+  /* overflow: visible; */
+  font-style: italic;
+  text-align: center;
+  font-family: "Open Sans";
+}
+
+.profile-card {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.vertical-timeline-element-icon {
+  background: rgb(120, 120, 210);
+  background: radial-gradient(
+    circle,
+    rgba(120, 120, 210, 1) 10%,
+    rgba(0, 0, 0, 0.94859950816264) 85%
+  );
+}
+
+.verticleTranslate {
+  -webkit-transition: 3s;
+  -moz-transition: 3s;
+  -ms-transition: 3s;
+  -o-transition: 3s;
+  transition: 2s;
+  color: red;
+  transform: scale3d(0, 0, -5);
+}
+
+.verticleTranslateReverse {
+  -webkit-transition: 3s;
+  -moz-transition: 3s;
+  -ms-transition: 3s;
+  -o-transition: 3s;
+  transition: 1s;
+  color: red;
+  transform: rotate(360deg) scale3d(1, 1, 1);
+}
+
+.vertical-timeline-element-date {
+  color: black;
+}
+
+.heading{
+    font-family:'Alkatra';
+    font-size: 40px;
+    font-style: italic;
+    margin: 4vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+hr{
+  width: 20%;
+  height: 0px;
+}

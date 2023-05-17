@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans');
+@import url('https://fonts.googleapis.com/css?family=Alkatra');
+#home{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.img{
+    &--bg{
+    opacity: 0.2;
+    position: absolute;
+    overflow: hidden;
+  }
+
+  &--navi{
+    border-radius: 100%;
+    width: 30vh;
+    height: 30vh;
+    z-index: 1;
+
+  }
+
+}
+
+.hello{
+    color: black;
+    font-size: xx-large;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 0px;
+    font-family:'Alegreya Sans', sans-serif;
+}
+
+.name-heading{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Alkatra';
+    margin: 10px;
+    color: rgb(225, 61, 61);
+}
+
+.bio{
+    color: black;
+    font-size: 24px;
+    line-height: 150%;
+    margin: 30px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-align:justify;
+    font-style: italic;
+    font-family:'Alegreya Sans';
+}
