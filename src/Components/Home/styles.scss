@@ -1,5 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans');
 @import url('https://fonts.googleapis.com/css?family=Alkatra');
+
+.home-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border: 1px solid black
+}
+
 #home{
     min-height: 100vh;
     display: flex;
@@ -22,7 +38,9 @@
     width: 30vh;
     height: 30vh;
     z-index: 1;
-
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    border: 1.5vh solid white;
   }
 
 }
@@ -40,7 +58,7 @@
     font-size: 50px;
     font-weight: bold;
     font-family: 'Alkatra';
-    margin: 10px;
+    // margin: 10px;
     color: rgb(225, 61, 61);
 }
 
@@ -48,10 +66,18 @@
     color: black;
     font-size: 24px;
     line-height: 150%;
-    margin: 30px;
+    // margin: 30px;
     font-weight: 600;
     letter-spacing: 2px;
     text-align:justify;
     font-style: italic;
     font-family:'Alegreya Sans';
 }
+
+.hand {
+    animation-name: wave;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+  }

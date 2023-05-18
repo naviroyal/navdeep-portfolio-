@@ -1,37 +1,83 @@
 import React from "react";
 import navi from "../../assets/navi-1.jpg";
-import men from "../../assets/men.png";
 import "./styles.scss";
+import { Box } from "@mui/material";
+import { Contact } from "../Contact/Contact";
+import { info } from "../../assets/info/info";
+import { SocialIcon } from "./SocialIcon";
+import { EmojiBullet } from "./EmojiBullet";
+
 export const Home = () => {
   return (
     <div id="home">
-      <img src={navi} alt="navi" className="img--navi" />
-      <p className="hello">Hello I'm</p>
-      <p className="name-heading">
-        Navdeep Singh
-        <span>
-          <img
-            src={men}
-            alt="men"
-            style={{ margin: "0vh 1vh", borderBottom: "1px solid black" }}
-            height={"50px"}
-            width={"50px"}
-          />
-        </span>
-      </p>
-      <p className="bio">
-        I am a senior software engineer with a focus on front-end development,
-        I'm passionate about building exceptional websites and delivering
-        immersive user experiences. My skills include HTML5, CSS3, JavaScript,
-        TypeScript and Reactjs, along with back-end technologies such as
-        Graphql, Hasura, Ruby on Rails and Firebase. I bring a relentless focus
-        on quality and attention to detail to every project, and take pride in
-        creating elegant, intuitive solutions that exceed client expectations.
-        With a love for technology and a commitment to excellence, I'm always
-        exploring new web development trends and pushing the boundaries of
-        what's possible. If you're looking for a skilled and dedicated software
-        engineer, let's chat!
-      </p>
+      <Box
+        component={"main"}
+        display={"flex"}
+        flexDirection={{ xs: "column", md: "row" }}
+        alignItems={"center"}
+        justifyContent={"center"}
+        minHeight={"calc(100vh - 175px)"}
+      >
+        <Box
+          alt={"image of developer"}
+          style={{ background: info.gradient, objectFit: "cover" }}
+          component={"img"}
+          src={navi}
+          width={{ xs: "35vh", md: "40vh" }}
+          height={{ xs: "35vh", md: "40vh" }}
+          borderRadius={"50%"}
+          p={"0.75rem"}
+          mb={{ xs: "1rem", sm: 0 }}
+          mr={{ xs: 0, md: "2rem" }}
+        />
+        <Box
+          style={{
+            borderRadius: "1rem",
+            background: "rgba(255, 255, 255, 0.2)",
+            boxShadow: "0 0 10px 0 rgba(255, 255, 255, 0.2)",
+            backdropFilter: "blur(8px)",
+            WebkitBackdropFilter: "blur(8px)",
+            padding: "1rem 2rem",
+            transition: "all 0.3s ease",
+          }}
+        >
+          <h1>
+            Hi, I'm{" "}
+            <span
+              style={{
+                background: info.gradient,
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}
+            >
+              Navdeep Singh
+            </span>
+            <span className="hand">🤚</span>
+          </h1>
+          <h2>I'm Full Stack Developer.</h2>
+          <Box component={"ul"} p={"0.8rem"}>
+            {info.miniBio.map((bio, index) => (
+              <EmojiBullet key={index} emoji={bio.emoji} text={bio.text} />
+            ))}
+          </Box>
+          <Box
+            display={"flex"}
+            gap={"1.5rem"}
+            color={"black"}
+            justifyContent={"center"}
+            fontSize={{ xs: "2rem", md: "2.5rem" }}
+          >
+            {info.socials.map((social, index) => (
+              <SocialIcon
+                key={index}
+                link={social.link}
+                icon={social.icon}
+                label={social.label}
+              />
+            ))}
+          </Box>
+        </Box>
+      </Box>
     </div>
   );
 };
