@@ -43,8 +43,8 @@ export const Home = () => {
             WebkitBackdropFilter: "blur(8px)",
             padding: "1rem 2rem",
             transition: "all 0.3s ease",
-            width: "60vh",
-            height: "40vh",
+            minWidth: "60vh",
+            minHeight: "40vh",
           }}
         >
           <h1>

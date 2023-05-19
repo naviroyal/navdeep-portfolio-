@@ -1,15 +1,26 @@
 import React from "react";
 import "./styles.scss";
+import { Link } from "react-router-dom";
 import linkedin from "../../assets/images/linkedin.png";
 import instagram from "../../assets/images/instagram.png";
 import twitter1 from "../../assets/images/twitter1.png";
 import telegram from "../../assets/images/telegram.png";
 import leetcode from "../../assets/images/leetcode.png";
+import resume from "../../assets/images/resume.jpg";
 import git from "../../assets/images/git.png";
 
 function SocialIcon() {
   return (
     <div className="contact-me-logos">
+      <button className="logo-btn">
+        <Link
+          to="/files/NavdeepSinghResumeSDE_Frontend.pdf"
+          target="_blank"
+          download
+        >
+          <img className="logo" src={resume} alt="resume logo" />
+        </Link>
+      </button>
       <button className="logo-btn">
         <a
           href="https://www.linkedin.com/in/navdeep-singh-684632168/"
