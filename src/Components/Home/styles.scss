@@ -143,6 +143,13 @@ a:hover {
   height: 5vh;
   width: 5vh;
   border-radius: 100%;
+  transition: $transition;
+
+  &:hover {
+    transform: translateY(-3px);
+    transition: $transition;
+    box-shadow: 5px 5px rgb(56, 53, 53);
+  }
 }
 
 .logo-btn {
@@ -152,11 +159,25 @@ a:hover {
   cursor: pointer;
 }
 
-.logo:hover {
-  transition: width 2s, height 2s, transform 2s;
-  box-shadow: 5px 5px rgb(56, 53, 53);
+
+nav {
+  transition: $transition;
 }
 
-li:hover{
-  transition: all 0.25 ease;
+.active {
+  border-bottom: 5px solid;
+  border-image-slice: 1;
+}
+
+li {
+  transition: $transition;
+
+  &:hover {
+    transform: translateY(-3px);
+    transition: $transition;
+  }
+}
+
+.link:hover {
+  color: unset;
 }

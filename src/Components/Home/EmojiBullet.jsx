@@ -1,5 +1,6 @@
 import React from "react";
 import { Box } from "@mui/material";
+import "./styles.scss";
 
 export const EmojiBullet = (props) => {
   const { emoji, text } = props;

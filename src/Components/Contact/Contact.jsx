@@ -11,7 +11,8 @@ export const Contact = () => {
         <div className="contact-me-copyright">
           Copyright ©2023 | Navdeep Singh
         </div>
-        <div className="contact-me-logos">
+        <div className="contact-me-copyright">All Right Reserved</div>
+        {/* <div className="contact-me-logos">
           <button className="logo-btn">
             <a
               href="https://www.linkedin.com/in/navdeep-singh-684632168/"
@@ -44,7 +45,7 @@ export const Contact = () => {
               <img className="logo" src={twitter1} alt="linkedin logo" />
             </a>
           </button>
-        </div>
+        </div> */}
       </section>
     </div>
   );
