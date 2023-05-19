@@ -1,4 +1,4 @@
-import self from "../navi.png";
+import self from "../images/navi.png";
 import { colors } from "../colors/mainGradient";
 
 export const info = {

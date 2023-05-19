@@ -1,6 +1,6 @@
-import bc from "./assets/bc.png";
-import hashedinLogo from "./assets/hashedinLogo.png";
-import mmdu from "./assets/mmdu.png";
+import bc from "./assets/images/bc.png";
+import hashedinLogo from "./assets/images/hashedinLogo.png";
+import mmdu from "./assets/images/mmdu.png";
 export const experience_data = [
   {
     name: "Beautful Code LLP",

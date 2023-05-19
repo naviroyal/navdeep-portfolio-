@@ -1,9 +1,9 @@
 import React from "react";
 import "./contactMeStyles.scss";
-import linkedin from "../../assets/linkedin.png";
-import telegram from "../../assets/telegram.png";
-import twitter1 from "../../assets/twitter1.png";
-import instagram from "../../assets/instagram.png";
+import linkedin from "../../assets/images/linkedin.png";
+import telegram from "../../assets/images/telegram.png";
+import twitter1 from "../../assets/images/twitter1.png";
+import instagram from "../../assets/images/instagram.png";
 export const Contact = () => {
   return (
     <div id="contact">

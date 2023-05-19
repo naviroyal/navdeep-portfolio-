@@ -1,7 +1,45 @@
+@import './variables.modules';
+
+body {
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-size: 1.5vh;
+  width: 100%;
+  height: 100%;
+  color: $dark;
+  background-color: $white;
+  box-sizing: border-box;
+}
+
+footer {
+  color: $dark;
+}
+
+.dark {
+  background-color: transparent;
+  color: $white;
+  transition: all 400ms;
+
+  a,
+  i,
+  li {
+    color: $white;
+    transition: color 400ms;
+  }
+
+  a:visited {
+    color: $white;
+  }
+
+  footer {
+    color: $white;
+  }
+}
+
 .container{
   display: flex;
   flex-direction: row;
 }
+
 
 .wrap .overlay {
   position: absolute;
