@@ -60,6 +60,7 @@
   font-family: "Open Sans";
   font-weight: 500;
   letter-spacing: 1px;
+  font-size: 30px;
   margin: 0;
   text-align: center;
   line-height: 1;
@@ -69,7 +70,7 @@
   transition: all 0.5s;
 }
 
-.profile-card header h2 {
+.profile-card header h2{
   color: #fff;
   font-family: "Open Sans";
   font-size: 16px;
@@ -143,16 +144,16 @@
   color: black;
 }
 
-.heading{
-    font-family:'Alkatra';
-    font-size: 40px;
-    font-style: italic;
-    margin: 4vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
+// .heading{
+//     font-family:'Alkatra';
+//     // font-size: 40px;
+//     font-style: italic;
+//     margin: 4vh;
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-around;
+//     align-items: center;
+// }
 
 hr{
   width: 20%;
