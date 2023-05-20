@@ -22,7 +22,23 @@
     &--contact{
         height: 20vh;
     }
+
+    
 }
+
+.sidebar-container{
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+#tsparticles{
+    @media screen and (max-width: 768px) {
+        display: none;
+      }
+}
+
+
 
 h1{
     text-align: center;

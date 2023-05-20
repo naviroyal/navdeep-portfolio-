@@ -1,10 +1,17 @@
 import "./App.scss";
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter } from "react-router-dom";
 import { Sidebar } from "./Components/Sidebar/Sidebar";
 import bg1 from "./assets/images/bg1.jpg";
 import { WelcomePage } from "./Components/Welcome/Welcome";
+import { Bars } from "./Components/Navbar/NavElements";
+
 function App() {
+  const [isMenuVisible, setIsMenuVisible] = useState(false);
+  const showMenu = () => {
+    setIsMenuVisible(!isMenuVisible);
+  };
+
   return (
     <div className="App">
       <BrowserRouter>
@@ -14,18 +21,12 @@ function App() {
             style={{
               position: "relative",
               backgroundImage: `url(${bg1})`,
-              backgroundPosition: "100px",
               backgroundSize: "cover",
               backgroundAttachment: "fixed",
             }}
             className="wrap"
           >
-            <div
-              style={{
-                position: "absolute",
-              }}
-              className="overlay"
-            ></div>
+            <div className="overlay"></div>
             <WelcomePage />
           </div>
         </div>

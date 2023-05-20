@@ -2,9 +2,10 @@ import { Navbar } from "../Navbar/Navbar";
 import "./sidebar.scss";
 import { Contact } from "../Contact/Contact";
 import { ParticlesBg } from "../ParticlesBg/ParticlesBg";
+
 export const Sidebar = () => {
   return (
-    <div>
+    <div className="sidebar-container">
       <div className="sidebar">
         <div className="name-head">
           <h1 className="name">
@@ -16,7 +17,7 @@ export const Sidebar = () => {
           <Contact />
         </div>
       </div>
-      <ParticlesBg />
+      <ParticlesBg className="particles" />
     </div>
   );
 };

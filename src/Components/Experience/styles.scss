@@ -6,6 +6,9 @@
   top: 40px;
   position: relative;
   min-width: 100vh;
+  @media screen and (max-width: 768px) {
+    padding: 0px;
+  }
 }
 
 .timeline-container {
@@ -143,6 +146,17 @@
 .vertical-timeline-element-date {
   color: black;
 }
+
+.vertical-timeline-element{
+  &--work{
+    @media screen and (max-width: 768px) {
+      max-width: 85%;
+    }
+  }
+}
+
+
+
 
 // .heading{
 //     font-family:'Alkatra';

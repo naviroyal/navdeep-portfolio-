@@ -50,8 +50,17 @@ footer {
   opacity: .4;
   background: #fff;
   z-index: -0;
+  
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .wrap{
   margin-left: 25%;
+  background-position: 100px;
+  @media screen and (max-width: 768px) {
+    margin-left: 0;
+  background-position: 0px;
+  }
 }
