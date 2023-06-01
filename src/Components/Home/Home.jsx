@@ -23,6 +23,7 @@ export const Home = () => {
           style={{
             background: info.gradient,
             objectFit: "cover",
+            boxShadow: "5px 5px 5px 5px grey",
           }}
           className="img--navi"
           component={"img"}
@@ -38,7 +39,8 @@ export const Home = () => {
           style={{
             borderRadius: "1rem",
             background: "#e7e7e7",
-            boxShadow: "0 0 10px 0 rgba(255, 255, 255, 0.2)",
+            marginRight: "1vh",
+            boxShadow: "-5px 5px 5px 5px grey",
             backdropFilter: "blur(8px)",
             WebkitBackdropFilter: "blur(8px)",
             padding: "1rem 2rem",

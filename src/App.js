@@ -1,17 +1,11 @@
 import "./App.scss";
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import { Sidebar } from "./Components/Sidebar/Sidebar";
 import bg1 from "./assets/images/bg1.jpg";
 import { WelcomePage } from "./Components/Welcome/Welcome";
-import { Bars } from "./Components/Navbar/NavElements";
 
 function App() {
-  const [isMenuVisible, setIsMenuVisible] = useState(false);
-  const showMenu = () => {
-    setIsMenuVisible(!isMenuVisible);
-  };
-
   return (
     <div className="App">
       <BrowserRouter>

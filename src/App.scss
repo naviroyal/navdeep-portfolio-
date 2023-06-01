@@ -64,3 +64,40 @@ footer {
   background-position: 0px;
   }
 }
+
+
+.pageHeading {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  font-family: 'Bree Serif', serif;
+  padding-bottom: 10px;
+  /* border-bottom: solid 2px gray ; */
+  color: black;
+}
+
+.pageHeading-main {
+  font-size: 3em;
+  color: black;
+  text-transform: capitalize;
+  display: inline-flex;
+  align-items: center;
+}
+
+.pageHeading-main::before,
+.pageHeading-main::after {
+  content: "";
+  width: 60px;
+  height: 2px;
+  margin: 15px;
+  background: #3498db;
+  display: inline-block;
+}
+
+.pageHeading-aux {
+  margin-top: 1em;
+  color: black;
+  font-size: 1.1em;
+}

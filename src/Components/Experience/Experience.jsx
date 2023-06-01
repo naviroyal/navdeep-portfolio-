@@ -8,7 +8,13 @@ import ExperienceCard from "./ExperienceCard";
 export const Experience = () => {
   return (
     <div id="experience" className="experience">
-      <h1 className="heading">Experience & Education</h1>
+      <span className="pageHeading" style={{ color: "white" }}>
+        <label className="pageHeading-main"> Experience & Education </label>
+        <label className="pageHeading-aux">
+          {" "}
+          My previous jobs and my qualifications.
+        </label>
+      </span>
       <div className="timeline-container">
         <VerticalTimeline>
           {experience_data.map((item) =>
