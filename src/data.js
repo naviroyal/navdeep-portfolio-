@@ -1,6 +1,23 @@
 import bc from "./assets/images/bc.png";
 import hashedinLogo from "./assets/images/hashedinLogo.png";
 import mmdu from "./assets/images/mmdu.png";
+import bubble1 from "./assets/images/bubble1.png";
+import bubble2 from "./assets/images/bubble2.png";
+import bubble3 from "./assets/images/bubble3.png";
+import htmlcss from "./assets/images/htmlcss.png";
+import js from "./assets/images/js.png";
+import typescript from "./assets/images/typescript.png";
+import hasura from "./assets/images/hasura.svg";
+import graphql from "./assets/images/graphql.png";
+import git from "./assets/images/git.png";
+import oops from "./assets/images/oops.jpeg";
+import postman from "./assets/images/postman.png";
+import vscode from "./assets/images/vscode.png";
+import rails from "./assets/images/rails.png";
+import ruby from "./assets/images/ruby.png";
+import c from "./assets/images/c++.png";
+import react from "./assets/images/react.png";
+
 export const experience_data = [
   {
     name: "Beautful Code LLP",
@@ -77,53 +94,143 @@ export const INTRO_TEXT =
 
 export const skills_data = [
   {
-    name: "Languages",
-    data: [
-      ["HTML/CSS", 4],
-      ["JavaScript", 4],
-      ["TypeScript", 4],
-      ["React", 4],
-      ["Graphql", 4],
-      ["Hasura", 4],
-      ["MySQL", 4],
-    ],
-    color: "lightgreen",
+    name: "HTML/CSS",
+    rating: 4,
+    bg: bubble1,
+    img: htmlcss,
   },
   {
-    name: "Frameworks",
-    data: [
-      ["Ruby", 3],
-      ["SQL", 3],
-      ["C++", 4],
-      ["Java", 2],
-      ["Rails", 3],
-      ["SpringBoot", 2],
-      ["OOPs", 4],
-    ],
-    color: "#a1bff8",
+    name: "JavaScript",
+    rating: 4,
+    bg: bubble2,
+    img: js,
   },
   {
-    name: "Tools",
-    data: [
-      ["Git", 5],
-      ["Postman", 4],
-      ["vscode", 5],
-      ["Dbeaver", 4],
-      ["Jenkins", 4],
-      ["Jira", 4],
-    ],
-    color: "#f8a97f",
+    name: "TypeScript",
+    rating: 4,
+    bg: bubble3,
+    img: typescript,
   },
   {
-    name: "Others",
-    data: [
-      ["MVC", 3],
-      ["REST", 3],
-      ["Problem Solving", 4],
-      ["Agile", 4],
-      ["Critical Thinking", 4],
-      ["Goal Oriented", 4],
-    ],
-    color: "#ff726f",
+    name: "React",
+    rating: 4,
+    bg: bubble1,
+    img: react,
   },
+  {
+    name: "Graphql",
+    rating: 4,
+    bg: bubble2,
+    img: graphql,
+  },
+  {
+    name: "Hasura",
+    rating: 4,
+    bg: bubble3,
+    img: hasura,
+  },
+  {
+    name: "MySQL",
+    rating: 4,
+    bg: bubble1,
+    img: htmlcss,
+  },
+  {
+    name: "Ruby",
+    rating: 4,
+    bg: bubble2,
+    img: ruby,
+  },
+  {
+    name: "SQL",
+    rating: 4,
+    bg: bubble3,
+    img: htmlcss,
+  },
+  {
+    name: "C++",
+    rating: 4,
+    bg: bubble1,
+    img: c,
+  },
+  {
+    name: "Rails",
+    rating: 4,
+    bg: bubble2,
+    img: rails,
+  },
+  {
+    name: "OOPS",
+    rating: 4,
+    bg: bubble3,
+    img: oops,
+  },
+  {
+    name: "Postman",
+    rating: 4,
+    bg: bubble1,
+    img: postman,
+  },
+  {
+    name: "VSCode",
+    rating: 4,
+    bg: bubble2,
+    img: vscode,
+  },
+  {
+    name: "Git",
+    rating: 4,
+    bg: bubble3,
+    img: git,
+  },
+  // {
+  //   name: "Languages",
+  //   data: [
+  //     ["HTML/CSS", 4, bubble1],
+  //     ["JavaScript", 4, bubble2],
+  //     ["TypeScript", 4, bubble3],
+  //     ["React", 4, bubble1],
+  //     ["Graphql", 4, bubble2],
+  //     ["Hasura", 4, bubble3],
+  //     ["MySQL", 4, bubble1],
+  //   ],
+  //   color: "lightgreen",
+  // },
+  // {
+  //   name: "Frameworks",
+  //   data: [
+  //     ["Ruby", 3, bubble1],
+  //     ["SQL", 3, bubble2],
+  //     ["C++", 4, bubble3],
+  //     // ["Java", 2],
+  //     ["Rails", 3, bubble1],
+  //     // ["SpringBoot", 2],
+  //     ["OOPs", 4, bubble2],
+  //   ],
+  //   color: "#a1bff8",
+  // },
+  // {
+  //   name: "Tools",
+  //   data: [
+  //     ["Git", 5, bubble3],
+  //     ["Postman", 4, bubble2],
+  //     ["vscode", 5, bubble3],
+  //     // ["Dbeaver", 4],
+  //     // ["Jenkins", 4],
+  //     // ["Jira", 4],
+  //   ],
+  //   color: "#f8a97f",
+  // },
+  // {
+  //   name: "Others",
+  //   data: [
+  //     ["MVC", 3],
+  //     ["REST", 3],
+  //     ["Problem Solving", 4],
+  //     ["Agile", 4],
+  //     ["Critical Thinking", 4],
+  //     ["Goal Oriented", 4],
+  //   ],
+  //   color: "#ff726f",
+  // },
 ];

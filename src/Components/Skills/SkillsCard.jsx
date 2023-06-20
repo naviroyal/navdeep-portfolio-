@@ -4,7 +4,7 @@ import "./styles.scss";
 
 export const SkillsCard = (props) => {
   const { skills } = props;
-
+  console.log(props);
   const getStars = (count) => {
     const elements = [];
 
@@ -14,8 +14,8 @@ export const SkillsCard = (props) => {
           className={"image"}
           src={stary}
           alt="star"
-          width={"35px"}
-          height={"35px"}
+          width={"15vh"}
+          height={"15vh"}
         />
       );
     }
@@ -26,8 +26,8 @@ export const SkillsCard = (props) => {
           className={"image"}
           src={star}
           alt="star"
-          width={"35px"}
-          height={"35px"}
+          width={"15vh"}
+          height={"15vh"}
         />
       );
     }
@@ -35,15 +35,33 @@ export const SkillsCard = (props) => {
   };
 
   return (
-    <div className="skill-card-container">
-      {skills.map((item) => {
-        return (
-          <div className="skill">
-            <p>{item[0]}</p>
-            <div>{getStars(item[1])}</div>
-          </div>
-        );
-      })}
+    <div
+      className="skill"
+      style={{
+        background: "rgba(52,152,219,0.2)",
+      }}
+    >
+      <p>{skills.name}</p>
+      <div
+        style={{
+          backgroundColor: "grey",
+          width: "100%",
+          height: "100%",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          borderBottomLeftRadius: "100%",
+          borderBottomRightRadius: "100%",
+        }}
+      >
+        <img
+          src={skills.img}
+          height={"70px"}
+          width={"80px"}
+          style={{ borderRadius: "100%", padding: "10px" }}
+          alt="logo"
+        />
+      </div>
     </div>
   );
 };

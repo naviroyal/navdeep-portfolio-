@@ -14,15 +14,11 @@ export const Skills = () => {
       </span>
 
       <div className="skills-container">
-        {skills_data.map((skills) => {
-          return (
-            <section className="skills-section">
-              <section>
-                <SkillsCard skills={skills.data} />
-              </section>
-            </section>
-          );
-        })}
+        <div className="board">
+          {skills_data.map((item) => {
+            return <SkillsCard skills={item} />;
+          })}
+        </div>
       </div>
     </div>
   );
