@@ -17,7 +17,8 @@ import rails from "./assets/images/rails.png";
 import ruby from "./assets/images/ruby.png";
 import c from "./assets/images/c++.png";
 import react from "./assets/images/react.png";
-
+import sql from "./assets/images/sql.png";
+import mysql from "./assets/images/mysql.png";
 export const experience_data = [
   {
     name: "Beautful Code LLP",
@@ -133,7 +134,7 @@ export const skills_data = [
     name: "MySQL",
     rating: 4,
     bg: bubble1,
-    img: htmlcss,
+    img: mysql,
   },
   {
     name: "Ruby",
@@ -145,7 +146,7 @@ export const skills_data = [
     name: "SQL",
     rating: 4,
     bg: bubble3,
-    img: htmlcss,
+    img: sql,
   },
   {
     name: "C++",
