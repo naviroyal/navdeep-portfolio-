@@ -2,10 +2,6 @@ import React, { useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import "./navbar.scss";
 export const Navbar = () => {
-  const [isMenuVisible, setIsMenuVisible] = useState(false);
-  const showMenu = () => {
-    setIsMenuVisible(!isMenuVisible);
-  };
   const [clicked, setClickedItem] = useState({
     home: true,
     exp: false,

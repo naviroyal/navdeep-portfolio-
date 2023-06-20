@@ -1,39 +1,7 @@
-import star from "../../assets/images/star.png";
-import stary from "../../assets/images/star-y.png";
 import "./styles.scss";
 
 export const SkillsCard = (props) => {
   const { skills } = props;
-  console.log(props);
-  const getStars = (count) => {
-    const elements = [];
-
-    for (let i = 1; i <= count; i++) {
-      elements.push(
-        <img
-          className={"image"}
-          src={stary}
-          alt="star"
-          width={"15vh"}
-          height={"15vh"}
-        />
-      );
-    }
-
-    for (let i = count + 1; i <= 5; i++) {
-      elements.push(
-        <img
-          className={"image"}
-          src={star}
-          alt="star"
-          width={"15vh"}
-          height={"15vh"}
-        />
-      );
-    }
-    return elements;
-  };
-
   return (
     <div
       className="skill"

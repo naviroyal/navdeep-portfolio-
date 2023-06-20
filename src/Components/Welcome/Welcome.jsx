@@ -3,6 +3,7 @@ import { Contact } from "../Contact/Contact";
 import { Experience } from "../Experience/Experience";
 import "./styles.scss";
 import { Skills } from "../Skills/Skills";
+
 export const WelcomePage = () => {
   return (
     <div className="welcome-container">

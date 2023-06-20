@@ -2,7 +2,6 @@ import React from "react";
 import navi from "../../assets/images/navi-1.jpg";
 import "./styles.scss";
 import { Box } from "@mui/material";
-import { Contact } from "../Contact/Contact";
 import { info } from "../../assets/info/info";
 import SocialIcon from "./SocialIcon";
 import { EmojiBullet } from "./EmojiBullet";

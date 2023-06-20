@@ -1,6 +1,7 @@
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import "./styles.scss";
+import computer from "../../assets/images/computer.jpg";
 
 function ExperienceCard({
   designation = "Software Engineer",
@@ -9,6 +10,7 @@ function ExperienceCard({
   company_logo = "",
   startYear,
   endYear,
+  icon,
 }) {
   return (
     <VerticalTimelineElement
@@ -16,6 +18,12 @@ function ExperienceCard({
       contentStyle={{ background: "white", color: "#fff", padding: 0 }}
       contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
       date={`${startYear} - ${endYear || "Present"}`}
+      icon={<img src={icon} alt="logo" width={"30px"} height={"30px"} />}
+      iconStyle={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
     >
       <aside className="profile-card">
         <header>

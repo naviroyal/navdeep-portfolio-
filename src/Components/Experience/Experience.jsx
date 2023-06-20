@@ -25,6 +25,7 @@ export const Experience = () => {
               company_logo: item.img,
               startYear: item.startYear,
               endYear: item.endYear,
+              icon: item.icon,
             })
           )}
         </VerticalTimeline>
